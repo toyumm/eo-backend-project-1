@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식</title>
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- CSS 파일 연결 -->
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <!-- 이름 -->
+            <div class="form-group">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="홍길동">
+            </div>
+
+            <!-- 생년월일 -->
+            <div class="form-group">
+                <label for="dob">생년월일</label>
+                <input type="text" id="dob" name="dob" placeholder="YYMMDD" maxlength="6">
+            </div>
+
+            <!-- ID 및 중복확인 버튼 -->
+            <div class="form-group id-group">
+                <label for="id">ID</label>
+                <input type="text" id="id" name="id">
+                <button type="button" class="check-button">중복확인</button>
+            </div>
+
+            <!-- 비밀번호 -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <!-- 비밀번호 확인 -->
+            <div class="form-group">
+                <label for="password-confirm">Password 확인</label>
+                <input type="password" id="password-confirm" name="password-confirm">
+            </div>
+
+            <!-- E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <!-- 버튼 섹션 -->
+            <div class="button-group">
+                <button type="submit" class="submit-button">회원가입</button>
+                <button type="button" class="main-button">Main</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

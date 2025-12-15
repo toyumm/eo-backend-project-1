@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* 배경색 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #fff; /* 양식 컨테이너 배경 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+.form-group label {
+    flex-basis: 120px; /* 레이블 너비 고정 */
+    font-weight: bold;
+    padding: 5px 12px;
+    background-color: #e0e0e0; /* 레이블 배경색 */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.form-group input {
+    flex-grow: 1; /* 입력 필드가 남은 공간 차지 */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ID 그룹을 위한 특정 스타일 */
+.id-group input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.check-button {
+    font-size: 12px;
+    padding: 8px 12px;
+    background-color: #d0d0d0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.check-button:hover {
+    background-color: #c0c0c0;
+}
+
+/* 버튼 스타일 */
+.button-group {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    margin-top: 20px;
+}
+
+.submit-button, .main-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button {
+    background-color: #e0e0e0; /* 이미지의 버튼 색상 */
+    margin-right: 10px;
+}
+
+.main-button {
+    background-color: #e0e0e0; /* 이미지의 버튼 색상 */
+}
+
+.submit-button:hover, .main-button:hover {
+    background-color: #c0c0c0;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+    }
+}
