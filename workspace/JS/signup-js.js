@@ -44,6 +44,7 @@ function validateForm() {
         return false;
     }
 
-    alert('회원가입 완료');
-    return true;
+    alert('회원가입이 완료되었습니다.');
+    location.href = '../index.html';
+    return false;
 }
