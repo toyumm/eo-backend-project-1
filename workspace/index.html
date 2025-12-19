@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>메인화면</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/mainstyle.css">
 </head>
@@ -13,8 +11,9 @@
 
     <header id="top">
         <div class="auth" id="authArea">
-            <button class="button" onclick="loginAndMove()">로그인</button>
+            <button class="button" id="loginBtn">로그인</button>
             <button class="button" id="signupBtn">회원가입</button>
+
         </div><!--auth-->
 
         <div class="profile hidden" id="profileArea">
@@ -23,16 +22,21 @@
             <div class="profile-menu hidden" id="profileMenu">
                 <a href="./HTML/informationl-html.html" class="menu-link">내 정보</a>
                 <a href="./HTML/history-html.html" class="menu-link">검색 내역</a>
-                <button onclick="logout()">로그아웃</button>
+                <button id="logoutBtn">로그아웃</button>
+
             </div><!--profile-menu hidden-->
+
         </div><!--profile hidden-->
+
     </header><!--top-->
 
     <main id="middle">
         <div class="search-box">
             <input type="text" placeholder="검색 또는 URL 입력">
             <button class="search" id="searchBtn">검색</button>
+            
         </div><!--search-box-->
+
     </main><!--middle-->
 
     <button class="dark-mode-button">Dark mode</button>

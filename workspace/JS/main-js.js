@@ -3,20 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const profileArea = document.getElementById("profileArea");
     const profileBtn = document.getElementById("profileBtn");
     const profileMenu = document.getElementById("profileMenu");
-    const searchBtn = document.getElementById("searchBtn");
     const signupBtn = document.getElementById("signupBtn");
+    const searchBtn = document.getElementById("searchBtn");
 
 
-    searchBtn.addEventListener("click", () => {
-        location.href = "./HTML/question-result.html";
-    });
-
-    signupBtn.addEventListener("click", () => {
-        location.href = "./HTML/signup-page.html";
-    });
+    const loginBtn = document.getElementById("loginBtn");
+    const logoutBtn = document.getElementById("logoutBtn");
 
 
-
+    
     function applyAuthUI() {
         const isLogin = localStorage.getItem("isLogin") === "true";
 
@@ -31,42 +26,43 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    
 
-    window.login = function () {
+
+    function login() {
         localStorage.setItem("isLogin", "true");
         applyAuthUI();
-    };
+    }
 
-
-    window.loginAndMove = function () {
-        login();
-        location.href = "./HTML/login.html";
-    };
-
-
-
-    window.logout = function () {
+    function logout() {
         localStorage.removeItem("isLogin");
         applyAuthUI();
-    };
+    }
 
+
+
+    loginBtn.addEventListener("click", () => {
+        login();
+        location.href = "./HTML/login.html";
+    });
+
+    logoutBtn.addEventListener("click", logout);
+
+    signupBtn.addEventListener("click", () => {
+        location.href = "./HTML/signup-page.html";
+    });
+
+    searchBtn.addEventListener("click", () => {
+        location.href = "./HTML/question-result.html";
+    });
 
     profileBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         profileMenu.classList.toggle("hidden");
     });
 
-
-    profileMenu.addEventListener("click", (e) => {
-        e.stopPropagation();
-    });
-
-
     document.addEventListener("click", () => {
         profileMenu.classList.add("hidden");
     });
-
 
     applyAuthUI();
 });
