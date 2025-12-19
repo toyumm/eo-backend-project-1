@@ -10,22 +10,24 @@
 </head>
 <body>
 
-    <div class="login-container">
-        <button id="main-btn" type="button">메인</button>
+    <div id="loginPage">
+        <div id="loginCard">
 
-        <textarea id="id" class="input-box" placeholder="ID"></textarea>
-        <textarea id="password" class="input-box" placeholder="Password"></textarea>
+            <span id="loginTitle">메인</span>
 
-        <div class="button-group">
+            <input type="text" id="loginId" placeholder="ID">
+            <input type="password" id="loginPw" placeholder="Password">
 
-            <button id="login" type="button">로그인</button>
-            <button id="singup" type="button">회원가입</button>
+            <div id="loginButtons">
+                <button id="loginBtn">로그인</button>
+                <button id="signupBtn">회원가입</button>
+            </div>
 
-        </div><!--button-group-->
+            <button id="findBtn">아이디 / 비밀번호 찾기</button>
 
-        <button id="password-find" type="button">아이디 / 비밀번호 찾기</button>
-    </div><!--login-container-->
-
+        </div>
+    </div>
+    
     <script src="../JS/login-js.js"></script>
 </body>
 </html>

@@ -1,22 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    document.getElementById("main-btn").addEventListener("click", () => {
-        location.href = "../index.html";
-    });
+    const loginBtn = document.getElementById("loginBtn");
+    const signupBtn = document.getElementById("signupBtn");
+    const findBtn = document.getElementById("findBtn");
 
+    if (loginBtn) {
+        loginBtn.addEventListener("click", () => {
+            location.href = "../index.html";
+        });
+    }
 
-    document.getElementById("login").addEventListener("click", () => {
-        location.href = "../index.html";
-    });
+    if (signupBtn) {
+        signupBtn.addEventListener("click", () => {
+            location.href = "./signup-page.html";
+        });
+    }
 
-
-    document.getElementById("singup").addEventListener("click", () => {
-        location.href = "./signup-page.html";
-    });
-
-
-    document.getElementById("password-find").addEventListener("click", () => {
-        location.href = "./password-page.html";
-    });
+    if (findBtn) {
+        findBtn.addEventListener("click", () => {
+            location.href = "./password-page.html";
+        });
+    }
 
 });
