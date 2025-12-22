@@ -1,0 +1,26 @@
+#head-logo {
+    display: block;
+    margin-top: 12px;
+    margin-left: 12px;
+    height: 40px;
+}
+
+#footer-content1 {
+    border-top: 1px solid gray;
+    position: fixed;
+    align-items: center;
+    justify-content: flex-end;
+    width:90vw;
+    text-align: right;
+    bottom:0px;
+    margin: 0 5%;
+    font-size: 12px;
+    color: gray;
+    padding: 10px 0;
+   
+}
+
+#footer-content2{
+    padding: 12px 12px 0 12px;
+    line-height:14px;
+}
