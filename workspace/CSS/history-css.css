@@ -1,47 +1,48 @@
 
 html { 
-  box-sizing: border-box; }
+    box-sizing: border-box; }
 
 body {
-  font-size: 14px;
-  font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
 }
 
 #container {
-  width:60vw;
-  margin: 40px auto;
+    width:60vw;
+    margin: 40px auto;
+    height:100vh;
 }
 
 #topBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 #searchBar {
-  flex: 1;
-  background-color: #d9d9d9;
-  border-radius: 10px;
-  padding: 14px 0;
-  text-align: center;
-  margin-right: 20px;
+    flex: 1;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    padding: 14px 0;
+    text-align: center;
+    
 }
 
 #history {
-  background-color: #d9d9d9;
-  border-radius: 10px;
-  padding: 25px;
-  height: 320px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    padding: 25px;
+    height: 320px;
 }
 
 #date {
-  font-weight: bold;
-  margin-bottom: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 #history-list > li {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
 }
