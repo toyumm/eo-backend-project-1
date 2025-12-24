@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginId = document.getElementById('loginId');
     const loginPw = document.getElementById('loginPw');
     const loginBtn = document.getElementById('loginBtn');
-    const signupBtn = document.getElementById('signupBtn');
-    const findBtn = document.getElementById('findBtn');
 
     const ID = 'link';
     const PW = 'a12345678';
@@ -36,13 +34,4 @@ document.addEventListener('DOMContentLoaded', function() {
         location.href = '../index.html';
     });
 
-    signupBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        location.href = './signup-page.html';
-    });
-
-    findBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        location.href = './password-page.html';
-    });
 });

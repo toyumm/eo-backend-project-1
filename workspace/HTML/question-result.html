@@ -4,75 +4,126 @@
     <meta charset="UTF-8">
     <title>검색 결과 페이지</title>
     <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/layout-style.css">
     <link rel="stylesheet" href="../CSS/question-result-css.css">
 
+    <script src="../JS/layout.js"></script>
 </head>
-<body id="body">
-    <header>
+<body>
+<div id="app">
+
+    <header id="top-header">
         <a href="../index.html" id="logo">
-            <img src="../imang" alt="메인으로 이동" >
+            <img src="../image/logo.png" alt="메인으로 이동">
         </a>
-    </header>
 
+        <div id="search-area">
+            <input type="text" placeholder="검색">
+            <button id="search-btn">
+                <img src="../image/돋보기.png" alt="검색">
+            </button>
+        </div><!--search-area-->
+    </header><!--top-header-->
 
-    <div>
-
-        <main>
-
-            <section id="search-area">
-                <input type="text" placeholder="검색" >
-
-                <button id="search-btn">
-                    <img src="../image/돋보기.png" alt="검색" >
-                </button>
-            </section><!--search-area-->
-
+    <main>
+        <div id="main-box">
+            
             <nav id="result-tab">
                 <button>AI 검색결과</button>
                 <button>이미지</button>
                 <button>동영상</button>
                 <button>홈페이지</button>
-            </nav><!--result-tab-->
-
-
-            <section id="result-panel">
-
-
-                <a href="https://altools.co.kr/service/notice?no=167" class="result-box">
-                    <p>검색 결과 패널</p>
-                    <p>AI가 정리한 요약 결과</p>
-                </a>
-
-
-                <a href="https://www.aitimes.com/news/articleView.html?idxno=204172" class="result-box">
-                    <p>뉴스</p>
-                </a>
-
-
-                <a href="https://framerusercontent.com/assets/8FM2MjuWQbUgU6nRp3yhznVO4h8.png" class="result-box">
-                    <p>이미지</p>
-                </a>
-
-
-                <a href="https://www.youtube.com/watch?v=SJl2MVeuKQk" class="result-box">
-                    <p>동영상</p>
-                </a>
-
-
-                <a href="https://myalan.ai/" class="result-box">
-                    <p>홈페이지</p>
-                </a>
+            </nav>
+            
+            <div id="result-panel">
+                <div id="result-left">
+                    
+                    <a href="https://altools.co.kr/service/notice?no=167" class="result-box">
+                        <p>검색 결과 패널</p>
+                        <p>AI가 정리한 요약 결과</p>
+                    </a>
+                    
+                    
+                    <a href="https://www.aitimes.com/news/articleView.html?idxno=204172" class="result-box">
+                        <p>뉴스</p>
+                    </a>
+                    
+                    
+                    <a href="https://framerusercontent.com/assets/8FM2MjuWQbUgU6nRp3yhznVO4h8.png" class="result-box">
+                        <p>이미지</p>
+                    </a>
+                    
+                    
+                    <a href="https://www.youtube.com/watch?v=SJl2MVeuKQk" class="result-box">
+                        <p>동영상</p>
+                    </a>
+                    
+                    
+                    <a href="https://myalan.ai/" class="result-box">
+                        <p>홈페이지</p>
+                    </a>
+                    
+                    
+                    
+                </div><!--result-left-->
                 
-
-                <a id="more">...더보기</a>
-
-
-            </section><!--result-panel-->
-
-
-        </main>
-    </div>
-
-
+                <div id="result-right">
+                    
+                    <div class="text-box" id="weather-box">
+                        <div>
+                            <span>❄️</span>
+                            <div>
+                                <p class="text-title">오늘 날씨 정보</p>
+                                <p>눈 · 1℃</p>
+                                <p>체감 온도 -3℃</p>
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        
+                        <div>
+                            <span>❄️</span>
+                            <div>
+                                <p class="text-title">내일 날씨 정보</p>
+                                <p>눈 · -1℃</p>
+                                <p>강설 예상</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="text-box">
+                        <p class="text-title">
+                            속보.. Link 팀장 윤 모씨 크리스마스에 솔로...
+                        </p>
+                        <p>
+                            2025년 12월 25일 즐거운 크리스마스에 홀로 집에서
+                            케이크를 먹은 사실이 밝혀져 큰 충격....
+                        </p>
+                        
+                        <p class="text-title">
+                            다들 즐거운 연휴 보내고 계신가요?
+                        </p>
+                        <p>
+                            당신만 모르는 연휴 즐기는 법!! 제가 알려드리겠습니다!
+                        </p>
+                        
+                        <p class="text-title">
+                            또 한번 사고쳤다!! 사장님이 미쳤어요!!
+                        </p>
+                        <p>
+                            세상에 이 물건이 95% 할인을 한다고?!
+                        </p>
+                    </div><!--text-box-->
+                    
+                </div><!--reult-right-->
+                
+            </div><!--result-panel-->
+        </div>
+    </main>
+    
+</div>
+<div id="footer-area"></div>
+    
 </body>
 </html>
