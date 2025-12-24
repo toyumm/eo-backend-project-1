@@ -13,31 +13,35 @@
 </head>
 <body>
 
-<div id="loginPage">
+<div id="app">
 
-    <a href="../index.html" id="loginLogo">
-        <img src="../image/head-logo.png" alt="link-logo">
-    </a>
-
-    <div id="loginCard">
+    <div id="loginPage">
         
-
-        <form id="login-form">
-            <input type="text" id="loginId" placeholder="ID" required>
-            <input type="password" id="loginPw" placeholder="Password" required>
-
-            <div id="loginButtons">
-                <a id="loginBtn" class="loginBtn">로그인</a>
-                <a id="signupBtn" class="signupBtn">회원가입</a>
-            </div>
-        </form>
-
-        <button id="findBtn">아이디 / 비밀번호 찾기</button>
-
-    </div>
-</div>
+        <a href="../index.html" id="loginLogo">
+            <img src="../image/head-logo.png" alt="link-logo">
+        </a>
+        
+        <div id="loginCard">
+            
+            
+            <form action="#" method="post" id="login-form">
+                <input type="text" id="loginId" placeholder="ID" required>
+                <input type="password" id="loginPw" placeholder="Password" required>
+                
+                <div id="loginButtons">
+                    <a id="loginBtn" class="loginBtn">로그인</a>
+                    <a href="../HTML/signup-page.html" id="signupBtn" class="signupBtn">회원가입</a>
+                </div>
+            </form>
+            
+            <a href="../HTML/password-page.html" id="findBtn">아이디 / 비밀번호 찾기</a>
+            
+        </div>
+    </div><!--loginPage-->
+    
+</div><!--app-->
 
 <div id="footer-area"></div>
-
+    
 </body>
 </html>
