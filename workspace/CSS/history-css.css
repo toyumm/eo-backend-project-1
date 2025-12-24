@@ -1,13 +1,10 @@
-
-html { 
-    box-sizing: border-box; }
-
-body {
+body{
     font-size: 14px;
     font-family: Arial, sans-serif;
 }
 
-#container {
+#app {
+    box-sizing: border-box;
     width:60vw;
     margin: 40px auto;
     height:100vh;
