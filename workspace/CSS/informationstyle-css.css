@@ -1,9 +1,9 @@
-body {
+#app {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
-#app {
+#container {
     margin: auto;
     background-color: #fff;
     padding: 20px;
@@ -80,12 +80,12 @@ body {
     width: 220px;
 }
 
-#container {
+#container2 {
     display: flex;
     justify-content: flex-end;
 }
 
-#container>button:only-child {
+#container2>button:only-child {
     width: 80px;
     height: 32px;
     background-color: #d9d9d9;
