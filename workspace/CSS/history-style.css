@@ -4,10 +4,8 @@
 }
 
 #container {
-    box-sizing: border-box;
     width:60vw;
-    margin: 40px auto;
-    height:100vh;
+    margin: auto;
 }
 
 #topBar {
@@ -43,3 +41,4 @@
     gap: 10px;
     margin-bottom: 10px;
 }
+
