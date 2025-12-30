@@ -79,42 +79,46 @@
 ## 📁 디렉터리 구조
 
 docs/
-├─ index.html  
+├─ index.html                # 메인 진입 페이지
 │
-├─ CSS/  
-│  ├─ reset.css  
-│  ├─ theme.css  
-│  ├─ layout-style.css  
-│  ├─ main-style.css  
-│  ├─ login-style.css  
-│  ├─ signup-style.css  
-│  ├─ password-style.css  
-│  ├─ history-style.css  
-│  ├─ information-style.css  
-│  └─ questionresult-style.css  
+├─ CSS/                      # 스타일시트
+│  ├─ reset.css              # CSS 초기화
+│  ├─ theme.css              # 다크모드 및 테마
+│  ├─ layout-style.css       # 공통 레이아웃
 │
-├─ HTML/  
-│  ├─ head.html  
-│  ├─ foot.html  
-│  ├─ login.html  
-│  ├─ signup.html  
-│  ├─ password.html  
-│  ├─ history.html  
-│  ├─ information.html  
-│  └─ question-result.html  
+│  ├─ main-style.css         # 메인 페이지
+│  ├─ login-style.css        # 로그인 페이지
+│  ├─ signup-style.css       # 회원가입 페이지
+│  ├─ password-style.css    # 비밀번호 찾기
 │
-├─ JS/  
-│  ├─ main.js  
-│  ├─ login.js  
-│  ├─ signup.js  
-│  ├─ password.js  
-│  └─ layout.js  
+│  ├─ history-style.css      # 검색 내역 페이지
+│  ├─ information-style.css # 개인정보 페이지
+│  └─ questionresult-style.css # 검색 결과 페이지
 │
-└─ image/  
-   ├─ logo.png  
-   ├─ logo_text.png  
-   ├─ head-logo.png  
-   └─ 돋보기.png  
+├─ HTML/                     # 페이지 HTML
+│  ├─ head.html              # 공통 헤더
+│  ├─ foot.html              # 공통 푸터
+│
+│  ├─ login.html             # 로그인
+│  ├─ signup.html            # 회원가입
+│  ├─ password.html          # 비밀번호 찾기
+│
+│  ├─ history.html           # 검색 내역
+│  ├─ information.html       # 개인정보 확인/수정
+│  └─ question-result.html   # 검색 결과
+│
+├─ JS/                       # JavaScript
+│  ├─ main.js                # 메인 페이지 로직
+│  ├─ login.js               # 로그인 처리
+│  ├─ signup.js              # 회원가입 처리
+│  ├─ password.js            # 비밀번호 찾기 처리
+│  └─ layout.js              # 공통 레이아웃 제어
+│
+└─ image/                    # 이미지 리소스
+   ├─ logo.png               # 로고
+   ├─ logo_text.png          # 텍스트 로고
+   ├─ head-logo.png          # 헤더 로고
+   └─ 돋보기.png             # 검색 아이콘
 
 ---
 
