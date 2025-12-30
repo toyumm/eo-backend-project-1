@@ -4,11 +4,9 @@
 본 프로젝트는 **[ESTSOFT] 백엔드 개발자 양성과정 14회차**의  
 **첫 번째 팀 프로젝트**입니다.
 
-간단한 **AI 포털 사이트 화면 설계**를 목표로 하였으며,  
-여러 AI 서비스를 하나의 웹 페이지에서 접근할 수 있는  
-포털 형태의 UI 구조를 구현했습니다.
-
-본 프로젝트는 **프론트엔드만을 사용**하여 구현되었습니다.
+여러 AI 서비스를 한 곳에서 접근할 수 있는  
+**포털 형태의 웹 페이지 UI 설계**를 목표로 하였으며,  
+프론트엔드 기술만을 사용하여 구현했습니다.
 
 ---
 
@@ -21,12 +19,11 @@
 ## 👥 팀 정보
 
 ### 팀명
-**Link**  
-> 팀원들이 서로 연결되어 하나의 시너지를 만들어낸다는 의미
+**Link**
 
 ### 팀원 및 역할
 - **윤상이 (팀장)**
-  - 메인 페이지 구축
+  - 메인 페이지
   - 로그인 페이지
   - 검색 결과 페이지
   - 다크 모드 구현
@@ -44,9 +41,9 @@
 ---
 
 ## 🎯 프로젝트 목표
-- 프론트엔드 기술만을 활용한 검색 포털 사이트 구현
-- 페이지 이동 흐름과 UI 구조 설계에 집중
-- 간단한 기능 구현을 통한 웹 서비스 구조 이해
+- 프론트엔드 기반 검색 포털 사이트 구현
+- UI 중심의 페이지 구조 설계
+- 기본적인 기능 구현을 통한 웹 서비스 구조 이해
 
 ---
 
@@ -56,69 +53,53 @@
 
 ---
 
-## 🧭 사이트 구조 (페이지 흐름)
+## 📁 Directory Structure
 
-### 메인 페이지
-- 로그인 페이지 이동
-- 회원가입 페이지 이동
-- 검색 결과 페이지 이동
+    docs/
+    ├─ index.html
 
-### 로그인 이후
-- 내 정보 페이지 이동
-- 검색 내역 페이지 이동
+    ├─ CSS/
+    │  ├─ reset.css
+    │  ├─ theme.css
+    │  ├─ layout-style.css
+    │
+    │  ├─ main-style.css
+    │  ├─ login-style.css
+    │  ├─ signup-style.css
+    │  ├─ password-style.css
+    │
+    │  ├─ history-style.css
+    │  ├─ information-style.css
+    │  └─ questionresult-style.css
 
-### 로그인 페이지
-- 회원가입 페이지 이동
-- 비밀번호 찾기 페이지 이동
+    ├─ HTML/
+    │  ├─ head.html
+    │  ├─ foot.html
+    │
+    │  ├─ login.html
+    │  ├─ signup.html
+    │  ├─ password.html
+    │
+    │  ├─ history.html
+    │  ├─ information.html
+    │  └─ question-result.html
 
-### 공통
-- 모든 페이지에서 로고 클릭 시 메인 페이지로 이동
+    ├─ JS/
+    │  ├─ main.js
+    │  ├─ login.js
+    │  ├─ signup.js
+    │  ├─ password.js
+    │  └─ layout.js
 
----
-
-## 📁 디렉터리 구조
-
-docs/
-├─ index.html                  # 메인 진입 페이지
-│
-├─ CSS/                        # 스타일시트
-│  ├─ reset.css                # CSS 초기화
-│  ├─ theme.css                # 다크모드 및 테마
-│  ├─ layout-style.css         # 공통 레이아웃
-│  ├─ main-style.css           # 메인 페이지
-│  ├─ login-style.css          # 로그인 페이지
-│  ├─ signup-style.css         # 회원가입 페이지
-│  ├─ password-style.css       # 비밀번호 찾기 페이지
-│  ├─ history-style.css        # 검색 내역 페이지
-│  ├─ information-style.css   # 개인정보 페이지
-│  └─ questionresult-style.css # 검색 결과 페이지
-│
-├─ HTML/                       # 페이지 HTML
-│  ├─ head.html                # 공통 헤더
-│  ├─ foot.html                # 공통 푸터
-│  ├─ login.html               # 로그인
-│  ├─ signup.html              # 회원가입
-│  ├─ password.html            # 비밀번호 찾기
-│  ├─ history.html             # 검색 내역
-│  ├─ information.html         # 개인정보 확인/수정
-│  └─ question-result.html     # 검색 결과
-│
-├─ JS/                         # JavaScript
-│  ├─ main.js                  # 메인 페이지 로직
-│  ├─ login.js                 # 로그인 처리
-│  ├─ signup.js                # 회원가입 처리
-│  ├─ password.js              # 비밀번호 찾기 처리
-│  └─ layout.js                # 공통 레이아웃 제어
-│
-└─ image/                      # 이미지 리소스
-   ├─ logo.png                 # 로고
-   ├─ logo_text.png            # 텍스트 로고
-   ├─ head-logo.png            # 헤더 로고
-   └─ 돋보기.png               # 검색 아이콘
+    └─ image/
+       ├─ logo.png
+       ├─ logo_text.png
+       ├─ head-logo.png
+       └─ 돋보기.png
 
 ---
 
-## 🛠 사용 기술
+## 🛠 사용된 언어
 - HTML
 - CSS
 - JavaScript
