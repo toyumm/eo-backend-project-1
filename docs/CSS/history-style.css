@@ -17,7 +17,8 @@
 
 #searchBar {
     flex: 1;
-    background-color: #d9d9d9;
+    background-color: var(--bg-main);
+    color: var(--text-main);
     border-radius: 10px;
     padding: 14px 0;
     text-align: center;
@@ -25,7 +26,8 @@
 }
 
 #history {
-    background-color: #d9d9d9;
+    background-color: var(--bg-main);
+    color: var(--text-sub);
     border-radius: 10px;
     padding: 25px;
     height: 320px;

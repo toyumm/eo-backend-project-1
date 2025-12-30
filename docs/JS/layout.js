@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    fetch("../html/head.html")
+    fetch("../HTML/head.html")
         .then(function (res) {
             return res.text();
         })
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-    fetch("../html/foot.html")
+    fetch("../HTML/foot.html")
         .then(function (res) {
             return res.text();
         })
