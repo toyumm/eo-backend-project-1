@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         const name = document.getElementById('name').value;
         const dob = document.getElementById('dob').value;
-        const id = document.getElementById('id').value;
+        const id = document.getElementById('user-id').value;
         const password = document.getElementById('password').value;
         const passwordConfirm = document.getElementById('password-confirm').value;
         const email = document.getElementById('email').value;
