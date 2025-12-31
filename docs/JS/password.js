@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const findForm = document.getElementById('find-password-form');
 
-    findForm.onsubmit = function() {        
+    findForm.onsubmit = function(e) { 
+        e.preventDefault();
+        
         const name = document.getElementById('name').value;
-        const id = document.getElementById('id').value;
+        const id = document.getElementById('user-id').value;
         const email = document.getElementById('email').value;
 
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
